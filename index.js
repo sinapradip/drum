@@ -50,3 +50,43 @@ document.querySelectorAll("button")[6].addEventListener( "click", function () {
 );
 
 // End of query selector for each click
+
+
+document.addEventListener('keypress', function (e) {
+    if (e.key === 'a') {
+        var audio = new Audio("sounds/0.mp3");
+        audio.play();
+    }
+
+    if (e.key === 's') {
+        var audio = new Audio("sounds/1.mp3");
+        audio.play();
+    }
+
+    if (e.key === 'd') {
+        var audio = new Audio("sounds/2.mp3");
+        audio.play();
+    }
+
+    if (e.key === 'f') {
+        var audio = new Audio("sounds/3.mp3");
+        audio.play();
+    }
+
+    if (e.key === 'j') {
+        var audio = new Audio("sounds/4.mp3");
+        audio.play();
+    }
+
+    if (e.key === 'k') {
+        var audio = new Audio("sounds/5.mp3");
+        audio.play();
+    }
+
+    if (e.key === 'l') {
+        var audio = new Audio("sounds/6.mp3");
+        audio.play();
+    }
+});
+
+// end of event listener on keypress
