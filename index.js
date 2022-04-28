@@ -1,3 +1,6 @@
+
+
+
 // Query selector for each of letters beacused looping is slow in live site.
 
 document.querySelectorAll("button")[0].addEventListener( "click", function () {
@@ -51,6 +54,7 @@ document.querySelectorAll("button")[6].addEventListener( "click", function () {
 
 // End of query selector for each click
 
+// Trigger drums when keys are pressed
 
 document.addEventListener('keypress', function (e) {
     if (e.key === 'a') {
@@ -87,10 +91,11 @@ document.addEventListener('keypress', function (e) {
         var audio = new Audio("sounds/6.mp3");
         audio.play();
     }
+
+    
 });
 
 // end of event listener on keypress
-
 
 //animation when button is clicked and released
 
