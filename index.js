@@ -90,3 +90,30 @@ document.addEventListener('keypress', function (e) {
 });
 
 // end of event listener on keypress
+
+
+//animation when button is clicked and released
+
+document.addEventListener("keypress", function(e)
+    {
+        buttonAnimation(e.key);
+    }
+)
+
+
+
+function buttonAnimation(currentKey) {
+    var activeButton = document.querySelector("."+currentKey);
+    for(var i=0;i<7;i++)
+    {
+        activeButton.classList.add("pressed");
+        setTimeout( function ()
+            {
+                activeButton.classList.remove("pressed");
+            }
+        , 100);
+        
+    }
+    
+
+}
